@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+build:
+  version: 2.0
+cards:
+  message: "for more info contact CARDS PROD team"
+  contactDetails:
+    name: "PROD LEAD"
+    email: "PROD@gmail.com"
+  onCallSupport:
+    - 3875121300
+    - 3875121301
+
+
+

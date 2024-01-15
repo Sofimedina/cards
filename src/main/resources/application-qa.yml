@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+build:
+  version: 1.0
+cards:
+  message: "for more info contact CARDS QA team"
+  contactDetails:
+    name: "QA LEAD"
+    email: "QA@gmail.com"
+  onCallSupport:
+    - 3875121200
+    - 3875121201
+
+

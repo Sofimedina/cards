@@ -14,3 +14,18 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  profiles:
+    active:
+      - "prod"
+build:
+  version: 0.0
+cards:
+  message: "for more info contact CARDS team"
+  contactDetails:
+    name: "Sofia Medina"
+    email: "sofi.k.medina@gmail.com"
+  onCallSupport:
+    - 3875121100
+    - 3875121101
+
+
