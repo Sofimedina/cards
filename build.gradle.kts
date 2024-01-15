@@ -3,7 +3,8 @@ plugins {
 	id("org.springframework.boot") version "3.2.1"
 	id("io.spring.dependency-management") version "1.1.4"
 	id("jacoco-report-aggregation")
-}
+	id("com.google.cloud.tools.jib") version "3.4.0"
+	}
 
 group = "com.skm"
 version = "0.0.1-SNAPSHOT"
