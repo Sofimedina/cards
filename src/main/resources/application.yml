@@ -1,6 +1,13 @@
 server:
   port: 9000
 spring:
+  application:
+    name: "cards"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  profiles:
+    active:
+      - "qa"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -14,18 +21,3 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  profiles:
-    active:
-      - "prod"
-build:
-  version: 0.0
-cards:
-  message: "for more info contact CARDS team"
-  contactDetails:
-    name: "Sofia Medina"
-    email: "sofi.k.medina@gmail.com"
-  onCallSupport:
-    - 3875121100
-    - 3875121101
-
-
