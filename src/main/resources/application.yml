@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: "cards"
-  config:
-    import: "optional:configserver:http://localhost:8071/"
   profiles:
     active:
       - "qa"
@@ -21,8 +19,20 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+rabbitmq:
+  host: "localhost"
+  port: 5672
+  username: "guest"
+  password: "guest"
