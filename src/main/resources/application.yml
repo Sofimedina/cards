@@ -1,5 +1,3 @@
-server:
-  port: 9000
 spring:
   application:
     name: "cards"
@@ -36,3 +34,5 @@ rabbitmq:
   port: 5672
   username: "guest"
   password: "guest"
+server:
+  port: 9000
